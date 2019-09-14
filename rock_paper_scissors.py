@@ -12,7 +12,7 @@ print()
 
 # initial set-up
 import random
-game_over = False
+game_over = <put True or False here - which one should it be?>
 player_score = 0
 computer_score = 0
 
@@ -21,11 +21,11 @@ while not game_over:
 
     # get the player's choice
 
-    player_choice = input("Choose rock, paper, or scissors: ")
+    player_choice = <get the player's input of rock, paper, or scissors>
 
     # use a random number to set the computer's choice
 
-    number = random.randint(1,3)
+    number = <get a random number between 1 and 3>
 
     if number == 1:
         computer_choice = "rock"
@@ -52,7 +52,7 @@ while not game_over:
         else:
             outcome = "tie"
 
-    elif player_choice == "scissors":
+    elif player_choice == <put the last remaining possibility here>:
         if computer_choice == "paper":
             outcome = "win"
         elif computer_choice == "rock":
@@ -66,15 +66,15 @@ while not game_over:
     # print the outcome and update the scores
 
     if outcome == "win":
-        print("You win!")
+        <print a message telling the player they won>
         player_score = player_score + 1
 
     elif outcome == "loss":
-        print("You lose!")
+        <print a message telling the player they lost>
         computer_score = computer_score + 1
 
     elif outcome == "tie":
-        print("It's a tie")
+        <print a message telling the player it's a tie>
 
     else:
         print("You must enter one of these choices: rock, paper, scissors")
