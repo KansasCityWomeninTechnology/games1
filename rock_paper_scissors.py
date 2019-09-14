@@ -80,7 +80,7 @@ while not game_over:
         print("You must enter one of these choices: rock, paper, scissors")
 
     print("Player:", player_score)
-    print("Computer:", computer_score)
+    <print a similar message showing the computer's score>
     print()
 
     # stop when someone reaches 5 points
